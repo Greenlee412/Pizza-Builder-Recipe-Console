@@ -64,8 +64,7 @@ public class Main {
 
         System.out.println(lt + response + ingredientArray[0] + equals + qtyArray[0] + rt);
         counter++;
-//      The following line is an ingredient counter. Remove before submission.
-        System.out.println("Counter: " + counter);
+
         System.out.println(linebreak);
 
 //      TODO: Sauce Selection section
@@ -117,8 +116,7 @@ public class Main {
         } else {
             System.out.println(lt + response + sauceOption[1] + rt);
         }
-//        //      The following line is an ingredient counter. Remove before submission.
-        System.out.println("Counter: " + counter);
+
         System.out.println(linebreak);
 
 //        TODO: Topping Section
@@ -164,6 +162,10 @@ public class Main {
                 switch (selection) {
                     case "a":
 
+                        if(Arrays.toString(ingredientArray).contains(ingredients[0])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 //                      checks to see if array index is already populated with a value. If true, searches for the next null value and pushes ingredient name to the array. Begins at [2] to account for crust and sauce placeholders.
 
                         for (i = 2; i < maxToppings; i++) {
@@ -194,12 +196,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "b":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[1])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -227,12 +235,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "c":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[2])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -260,12 +274,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "d":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[3])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -299,12 +319,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "e":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[4])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -332,12 +358,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "f":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[5])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -365,12 +397,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "g":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[6])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -404,12 +442,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "h":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[7])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -443,12 +487,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "i":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[8])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -476,12 +526,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "j":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[9])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -515,12 +571,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "k":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[10])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -554,12 +616,18 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
                         break;
 
                     case "l":
+
+                        if(Arrays.toString(ingredientArray).contains(ingredients[11])) {
+                            System.out.println("Topping has previously been chosen. Please make a new selection.");
+                            break;
+                        }
 
                         for (i = 2; i < maxToppings; i++) {
                             if (ingredientArray[i] == null) {
@@ -587,6 +655,7 @@ public class Main {
                                 }
 
                                 System.out.println(lt + response + ingredientArray[i] + equals + qtyArray[i] + rt);
+                                counter++;
                                 break;
                             }
                         }
@@ -596,7 +665,7 @@ public class Main {
                         System.out.println("NOT A VALID OPTION");
                         break;
                 }
-                counter++;
+
                 System.out.println(linebreak);
 
                 if (counter < 8) {
