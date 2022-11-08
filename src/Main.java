@@ -706,7 +706,6 @@ public class Main {
                     }
                 }
 
-                System.out.println("\n");
                 System.out.println(" \n* Pizza is to be appropriately baked until crust\n is cooked and toppings are warmed *\n");
                 System.out.println(linebreak);
         }
