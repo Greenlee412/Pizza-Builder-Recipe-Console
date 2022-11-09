@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 public class Main {
+
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String linebreak = "*************************************************************************************\n";
@@ -27,12 +29,15 @@ public class Main {
         String[] ingredientArray = new String[maxToppings];
         String[] qtyArray = new String[maxToppings];
 
+
 //      TODO: initialize ingredientArray & qtyArray with null for each value. This will allow to test for !null values in the recipe output
 
         for (i = 0; i < maxToppings; i++) {
             ingredientArray[i] = null;
             qtyArray[i] = null;
         }
+
+//        Crust and sauce selection must take place out of the loop, as they are only selected once.
 
 //      TODO: Crust Selection section
 //        Completed 11/5/2022
@@ -120,9 +125,9 @@ public class Main {
         System.out.println(linebreak);
 
 //        TODO: Topping Section
-//            Completed:
+//            Completed: 11/7/2022
 
-//        TODO: while loop to check total number of ingredients and add another topping yes/no - completed 11/6/2022
+//        TODO: while loop to check total number of ingredients (counter) and add another topping yes/no - completed 11/6/2022
 //        Starts at index 2 to account for crust and sauce placeholders, these ingredient options are not present in the toppings loop
 
         while (counter < 8 && !done) {
@@ -144,7 +149,7 @@ public class Main {
                     letters[i] = (char) ('a' + i);
                 }
 
-//                TODO: input validation for ingredient letter selection
+//                TODO: input validation for ingredient letter selection - completed 11/8/2022
                 while (!Arrays.toString(letters).contains(selection)) {
                     System.out.println("Invalid selection.");
                     System.out.println("Please choose one ingredient option: \n");
@@ -157,7 +162,7 @@ public class Main {
                     selection = input.next();
                 }
 
-//TODO: implement validation for if topping name already exists in ingredientArray. If so, return error message and prompt for new selection. Might have to use qtyArray index for a check to account for no sauce option.
+//TODO: implement validation for if topping name already exists in ingredientArray. If so, return error message and prompt for new selection. Completed 11/7/2022
 
                 switch (selection) {
                     case "a":
@@ -177,7 +182,6 @@ public class Main {
                                 System.out.print(choice);
                                 selection = input.next();
 
-                                //        TODO: input validation:
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
                                     System.out.println("Invalid selection.");
@@ -668,6 +672,8 @@ public class Main {
 
                 System.out.println(linebreak);
 
+//              Below is the section to prompt for adding another ingredient. Ingredient counter must be less than 8 for this to occur, else break to print recipe section.
+
                 if (counter < 8) {
 
                     System.out.println("Would you like to add another ingredient?\n");
@@ -690,23 +696,19 @@ public class Main {
                 }
             }
     }
-
 //    TODO: Recipe Output Section - completed 11/7/2022
 //    TODO: "Your recipe" statement - completed: 11/6/2022
 //    TODO: Crust line with formatting - completed 11/6/2022
 //    TODO: Condition sauce line with formatting - completed 11/6/2022
 //    TODO: Ingredient loop with formatting - check for null values in arrays x2 - completed 11/7/2022
 //    TODO: Final baking instruction - completed 11/7/2022
-
-                System.out.println("Your pizza recipe: \n");
-
-                for (i = 0; i < ingredientArray.length; i++) {
-                    if (ingredientArray[i] != null) {
-                        System.out.printf("%-35s%-50s\n", ingredientArray[i], qtyArray[i]);
-                    }
-                }
-
-                System.out.println(" \n* Pizza is to be appropriately baked until crust\n is cooked and toppings are warmed *\n");
-                System.out.println(linebreak);
+        System.out.println("Your pizza recipe: \n");
+        for (i = 0; i < ingredientArray.length; i++) {
+            if (ingredientArray[i] != null) {
+                System.out.printf("%-35s%-50s\n", ingredientArray[i], qtyArray[i]);
+            }
+        }
+        System.out.println(" \n* Pizza is to be appropriately baked until crust\n is cooked and toppings are warmed *\n");
+        System.out.println(linebreak);
         }
     }
