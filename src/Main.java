@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String linebreak = "*************************************************************************************\n";
+        String linebreak = "********************************************************************************\n";
         String lt = "*  ";
         String rt = "  *";
         String equals = " = ";
@@ -48,6 +48,7 @@ public class Main {
         System.out.println("\n");
         System.out.print(choice);
         selection = input.next();
+        selection = selection.toLowerCase();
 
         //        TODO: input validation: completed 11/7/2022
         while(!selection.equals("a") && !selection.equals("b")) {
@@ -57,6 +58,7 @@ public class Main {
             System.out.println("\n");
             System.out.print(choice);
             selection = input.next();
+            selection = selection.toLowerCase();
         }
 
         if (selection.equals("a")) {
@@ -80,6 +82,7 @@ public class Main {
         System.out.println("\n");
         System.out.print(choice);
         selection = input.next();
+        selection = selection.toLowerCase();
 
         //        TODO: input validation: completed 11/7/2022
         while(!selection.equals("a") && !selection.equals("b")) {
@@ -89,6 +92,7 @@ public class Main {
             System.out.println("\n");
             System.out.print(choice);
             selection = input.next();
+            selection = selection.toLowerCase();
         }
 
         if (selection.equals("a")) {
@@ -98,6 +102,7 @@ public class Main {
             System.out.println("\n");
             System.out.print(choice);
             selection = input.next();
+            selection = selection.toLowerCase();
 
             //        TODO: input validation: completed 11/7/2022
             while(!selection.equals("a") && !selection.equals("b")) {
@@ -107,6 +112,8 @@ public class Main {
                 System.out.println("\n");
                 System.out.print(choice);
                 selection = input.next();
+                selection = selection.toLowerCase();
+
             }
 
             if (selection.equals("a")) {
@@ -160,6 +167,7 @@ public class Main {
                     System.out.println("\n");
                     System.out.print(choice);
                     selection = input.next();
+                    selection = selection.toLowerCase();
                 }
 
 //TODO: implement validation for if topping name already exists in ingredientArray. If so, return error message and prompt for new selection. Completed 11/7/2022
@@ -181,6 +189,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
@@ -190,6 +199,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -221,6 +231,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
                                     System.out.println("Invalid selection.");
@@ -229,6 +240,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -260,6 +272,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
                                     System.out.println("Invalid selection.");
@@ -268,6 +281,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -299,6 +313,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b") && !selection.equals("c") && !selection.equals("d")) {
                                     System.out.println("Invalid selection.");
@@ -307,6 +322,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -344,6 +360,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
                                     System.out.println("Invalid selection.");
@@ -352,6 +369,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -383,6 +401,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
                                     System.out.println("Invalid selection.");
@@ -391,6 +410,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -422,6 +442,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b") && !selection.equals("c") && !selection.equals("d")) {
                                     System.out.println("Invalid selection.");
@@ -430,6 +451,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -467,6 +489,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b") && !selection.equals("c") && !selection.equals("d")) {
                                     System.out.println("Invalid selection.");
@@ -475,6 +498,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -512,6 +536,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
                                     System.out.println("Invalid selection.");
@@ -520,6 +545,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -551,6 +577,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b") && !selection.equals("c") && !selection.equals("d")) {
                                     System.out.println("Invalid selection.");
@@ -559,6 +586,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -596,6 +624,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b") && !selection.equals("c") && !selection.equals("d")) {
                                     System.out.println("Invalid selection.");
@@ -604,6 +633,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -641,6 +671,7 @@ public class Main {
                                 System.out.println("\n");
                                 System.out.print(choice);
                                 selection = input.next();
+                                selection = selection.toLowerCase();
 
                                 while(!selection.equals("a") && !selection.equals("b")) {
                                     System.out.println("Invalid selection.");
@@ -649,6 +680,7 @@ public class Main {
                                     System.out.println("\n");
                                     System.out.print(choice);
                                     selection = input.next();
+                                    selection = selection.toLowerCase();
                                 }
 
                                 if (selection.equals("a")) {
@@ -681,6 +713,18 @@ public class Main {
                     System.out.println("\n");
                     System.out.print(choice);
                     selection = input.next();
+                    selection = selection.toLowerCase();
+
+                    while(!selection.equals("a") && !selection.equals("b")) {
+                        System.out.println("Invalid selection.");
+                        System.out.println("Would you like to add another ingredient?\n");
+                        System.out.printf("a.\t%-25s" + "b.\t%-25s", cont[0], cont[1]);
+                        System.out.println("\n");
+                        System.out.print(choice);
+                        selection = input.next();
+                        selection = selection.toLowerCase();
+                    }
+
                     System.out.println(linebreak);
 
                     if (selection.equals("a")) {
@@ -708,7 +752,7 @@ public class Main {
                 System.out.printf("%-35s%-50s\n", ingredientArray[i], qtyArray[i]);
             }
         }
-        System.out.println(" \n* Pizza is to be appropriately baked until crust\n is cooked and toppings are warmed *\n");
+        System.out.println(" \n* Pizza is to be appropriately baked until crust is cooked\n and toppings are warmed *\n");
         System.out.println(linebreak);
         }
     }
